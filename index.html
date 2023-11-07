@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fandomo</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="nav-header">
+            <p class="logo">Fandomo</p>
+            <i class='bx bx-menu btn-menu'></i>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-closet' ></i>
+                    <span class="text">Ropa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-library'></i>
+                    <span class="text">Mangas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-invader'></i>
+                    <span class="text">Posters</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-palette'></i>
+                    <span class="text">Posters</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-add-to-queue'></i>
+                    <span class="text">Agregar Producto</span>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="theme-wapper">
+            <i class='bx bxs-moon' ></i>
+            <p>Tema oscuro</p>
+            <div class="theme-btn">
+                <span class="theme-ball"></span>
+            </div>
+        </div> -->
+    </div>
+    <main class="container">
+        <div class="container-header">
+            <div class="title-logo">
+                <img src="images/logo.png" alt="">
+                <h1>Fandomo</h1>
+            </div>
+            <div class="shopping-cart">
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text">
+                </div>
+                <div>
+                    <i class='bx bx-shopping-bag' id="shopping-cart"></i>
+                    <span id="contador">0</span>
+                </div>
+                
+            </div>
+        </div>
+        <div id="products-container">
+            <div class="product-card">
+                <img class="img-card" src="images/Camiseta1.webp">
+                <div class="content-card">
+                    <h3 class="title-card">Camiseta X</h3>
+                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
+                    <div class="products-describe">
+                        <p class="stock-products">disponibles 25</p>
+                        <p class="products-category">categoria</p>
+                    </div>
+                    <div id="container-button">
+                        <p class="prace-card">25.000 COP</p>
+                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img class="img-card" src="images/Camiseta1.webp">
+                <div class="content-card">
+                    <h3 class="title-card">Camiseta X</h3>
+                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
+                    <div class="products-describe">
+                        <p class="stock-products">disponibles 25</p>
+                        <p class="products-category">categoria</p>
+                    </div>
+                    <div id="container-button">
+                        <p class="prace-card">25.000 COP</p>
+                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img class="img-card" src="images/Camiseta1.webp">
+                <div class="content-card">
+                    <h3 class="title-card">Camiseta X</h3>
+                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
+                    <div class="products-describe">
+                        <p class="stock-products">disponibles 25</p>
+                        <p class="products-category">categoria</p>
+                    </div>
+                    <div id="container-button">
+                        <p class="prace-card">25.000 COP</p>
+                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    
+    <script src="js/sidebar.js"></script>
+</body>
+</html>
