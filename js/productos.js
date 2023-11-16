@@ -123,6 +123,7 @@ function Productos(){
             categoria: "busos"
         }
     }
+
     
     for(const clave in Productos){
         localStorage.setItem(clave,JSON.stringify(Productos[clave]));
@@ -137,17 +138,11 @@ function mostrarTodosLosProductos() {
     }
 }
 
-function mostrarImagen(producto) {
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-    generarTarjetas(producto, productCard);
-    productsContainer.appendChild(productCard);
-}
 
 function generarTarjetas(valor) {
     const productCardHTML = `
         <div class="product-card">
-            <img class="img-card" src="${valor.img.startsWith("blob:") ? valor.img : valor.img}" />
+            <img class="img-card" src="${valor.img}" />
         <div class="content-card">
             <h3 class="title-card">${valor.nombre}</h3>
             <p class="description-card">${valor.descripcion}</p>
@@ -166,7 +161,7 @@ function generarTarjetas(valor) {
 productsContainer.innerHTML += productCardHTML;
 }
 
-export { mostrarImagen, mostrarTodosLosProductos, Productos,generarTarjetas };
+export {  mostrarTodosLosProductos, Productos,generarTarjetas };
 
 
 
