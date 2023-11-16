@@ -2,26 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="css/style.css">
-    <title>Famdomo</title>
-</head>
-<body>
-    <div class="encabezado">
-        <img src="images/menu.png" alt="" id="menuHamburguesa">
-        <img src="images/logo.png" alt="" id="logo">
-        <div id="container-carrito">
-            <span id="contador">0</span>
-            <img src="images/carrito.png" alt="" id="carrito">
-        </div>
-    </div>
-
-    <div id="products-container">
-        
-    </div>
-    <script src="js/productos.js"></script>
-    <script src="js/generarTarjetas.js"></script>
-=======
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -36,49 +16,42 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">
+                <button id="index">
                     <i class='bx bx-home-alt-2'></i>
                     <span class="text">Home</span>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button id="ropa">
                     <i class='bx bx-closet' ></i>
                     <span class="text">Ropa</span>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button>
                     <i class='bx bx-library'></i>
                     <span class="text">Mangas</span>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button>
                     <i class='bx bxs-invader'></i>
                     <span class="text">Posters</span>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button>
                     <i class='bx bx-palette'></i>
                     <span class="text">Posters</span>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button id="btn-crear">
                     <i class='bx bx-add-to-queue'></i>
                     <span class="text">Agregar Producto</span>
-                </a>
+                </button>
             </li>
         </ul>
-        <!-- <div class="theme-wapper">
-            <i class='bx bxs-moon' ></i>
-            <p>Tema oscuro</p>
-            <div class="theme-btn">
-                <span class="theme-ball"></span>
-            </div>
-        </div> -->
     </div>
     <main class="container">
         <div class="container-header">
@@ -89,7 +62,7 @@
             <div class="shopping-cart">
                 <div class="search">
                     <i class='bx bx-search'></i>
-                    <input type="text">
+                    <input type="text" id="searchInput">
                 </div>
                 <div>
                     <i class='bx bx-shopping-bag' id="shopping-cart"></i>
@@ -98,56 +71,46 @@
                 
             </div>
         </div>
+        <div id="container-carrito">
+                
+        </div>
         <div id="products-container">
-            <div class="product-card">
-                <img class="img-card" src="images/Camiseta1.webp">
-                <div class="content-card">
-                    <h3 class="title-card">Camiseta X</h3>
-                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
-                    <div class="products-describe">
-                        <p class="stock-products">disponibles 25</p>
-                        <p class="products-category">categoria</p>
+        </div>
+        <div id="modal">
+                <form action="" id="productoForm">
+                    <span id="btn-close">&times;</span>
+                    <h2>Crear Nuevo Producto</h2>
+                    <div class="content-form">
+                        <div class="container-img">
+                            <img src="images/logo.png" alt="" id="img-form">
+                            <input type="file" name="imgProducto" id="imgProducto" accept="image/*">
+                            <label for="imgProducto">Seleccione una Imagen</label>
+                        </div>
+                        <div class="container-inputs">
+                            <label for="nombreProd">Nombre Producto</label>
+                            <input type="text" id="nombreProd" placeholder="Nombre Producto">
+                
+                            <label for="catProd">Descripcion Producto</label>
+                            <input type="text" id="catProd" placeholder="categria Producto">
+                
+                
+                            <label for="cantProd">cantidad Producto</label>
+                            <input type="number" id="cantProd" placeholder="Precio Producto">
+                
+                            <label for="precioProd">Precio Producto</label>
+                            <input type="number" id="precioProd" placeholder="Precio Producto">
+                
+                            <label for="descriptionProd">Descripcion Producto</label>
+                            <textarea name="descriptionProd" id="descriptionProd" placeholder="ingrese la descripcion del producto"></textarea>
+                
+                            <input type="submit" value="Guardad">
+                        </div>
                     </div>
-                    <div id="container-button">
-                        <p class="prace-card">25.000 COP</p>
-                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
-                    </div>
-                </div>
-            </div> 
-            <div class="product-card">
-                <img class="img-card" src="images/Camiseta1.webp">
-                <div class="content-card">
-                    <h3 class="title-card">Camiseta X</h3>
-                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
-                    <div class="products-describe">
-                        <p class="stock-products">disponibles 25</p>
-                        <p class="products-category">categoria</p>
-                    </div>
-                    <div id="container-button">
-                        <p class="prace-card">25.000 COP</p>
-                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
-                    </div>
-                </div>
-            </div> 
-            <div class="product-card">
-                <img class="img-card" src="images/Camiseta1.webp">
-                <div class="content-card">
-                    <h3 class="title-card">Camiseta X</h3>
-                    <p class="description-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde maxime ad fugit deserunt vel voluptas delectus.</p>
-                    <div class="products-describe">
-                        <p class="stock-products">disponibles 25</p>
-                        <p class="products-category">categoria</p>
-                    </div>
-                    <div id="container-button">
-                        <p class="prace-card">25.000 COP</p>
-                        <button id="add-cart"><i class='bx bx-cart-add'></i></button>
-                    </div>
-                </div>
-            </div> 
+                </form>
         </div>
     </main>
     
-    <script src="js/sidebar.js"></script>
->>>>>>> feuture/estilos
+    <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
